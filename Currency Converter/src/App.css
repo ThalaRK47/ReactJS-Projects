@@ -1,0 +1,105 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@100..900&family=Itim&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+/* font-family: "Inter", sans-serif;
+font-family: "Poppins", sans-serif;
+font-family: "Itim", cursive;
+font-family: "Roboto Serif", sans-serif; */
+
+*{
+  margin:0;
+  padding:0;
+  box-sizing:border-box;
+  font-family: "Itim", cursive;
+}
+
+body{
+  width:100vw;
+  height:100vh;
+  display:flex;
+  justify-content:center;
+  align-items:center;
+  background-color:#cf0d68;
+}
+
+.currency-converter{
+  width:400px;
+  background-color:#3e257c;
+  border-radius:12px;
+  padding:10px 20px;
+  box-shadow: rgba(50, 50, 93, 0.25) 0px 50px 100px -20px, rgba(0, 0, 0, 0.3) 0px 30px 60px -30px, rgba(10, 37, 64, 0.35) 0px -2px 6px 0px inset;
+}
+
+h1{
+  font-family:"Poppins",sans-serif;
+  color:#f6117c;
+  letter-spacing: 2px;
+  text-transform:uppercase;
+  text-align: center;
+  font-size:26px;
+  padding:10px 0px;
+  margin-bottom:10px;
+  border-top:2px dotted #f6117c;
+  border-bottom:2px dotted #f6117c;
+}
+
+.box{
+  height:200px;
+  width:100%;
+  background:url("./assets/currency.png");
+  background-position: center;
+  background-size: contain;
+  background-repeat: no-repeat;
+  background-size:70%;
+  margin:15px 0px;
+}
+
+.input-container{
+  margin-bottom:15px;
+}
+
+label{
+  display:block;
+  margin-bottom: 5px;
+  color:#f6117c;
+  font-size:22px;
+}
+
+input,select{
+  width:100%;
+  padding:10px;
+  margin-bottom:5px;
+  border:3px solid #e7187f59;
+  border-radius:6px;
+  letter-spacing: 1px;
+  font-size:20px;
+  background-color: transparent;
+  color:rgba(248, 244, 244, 0.75);
+  outline: none;
+}
+
+input:focus,select:focus{
+  border-color: #f6117cb3;
+  color: #f6117ccc;
+}
+
+.result{
+  margin:20px 0px;
+  padding: 10px;
+  border:2px dotted #f6117c;
+  border-radius:5px;
+  color:#f6117c;
+  letter-spacing: 1px;
+}
+
+.result p{
+  margin:10px 0;
+  font-weight: bold;
+  font-family: "Inter", sans-serif;
+  text-align:center;
+}
+
+.result:hover{
+  color:#ffffffcc;
+  background-color:#f6117c;
+  border:2px solid #3e257c;
+}
