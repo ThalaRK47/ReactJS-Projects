@@ -1,0 +1,132 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@100..900&family=Itim&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+/* font-family: "Inter", sans-serif;
+font-family: "Poppins", sans-serif;
+font-family: "Itim", cursive;
+font-family: "Roboto Serif", sans-serif; */
+
+*{
+  margin:0;
+  padding:0;
+  box-sizing:border-box;
+  font-family: "Itim", cursive;
+}
+
+body{
+  width:100vw;
+  height:100vh;
+  display:flex;
+  justify-content:center;
+  align-items:center;
+  background-color:teal;
+}
+
+.bmi-calculator{
+  width:800px;
+  height:525px;
+  padding:20px;
+  color:#f97240;
+  background-color: rgb(56, 56, 154);
+  border-radius:12px;
+  box-shadow: rgba(50, 50, 93, 0.25) 0px 50px 100px -20px, rgba(0, 0, 0, 0.3) 0px 30px 60px -30px, rgba(10, 37, 64, 0.35) 0px -2px 6px 0px inset;
+  display:flex;
+}
+
+.box{
+  width:350px;
+  background-image: url("assets/bmi.png");
+  background-repeat: no-repeat;
+  background-position:center;
+  background-size: contain;
+}
+
+.data{
+  flex:1;
+  padding: 15px;
+  color:#ffd0a7;
+}
+
+h1{
+  font-family: "Poppins", sans-serif;
+  font-weight: 500;
+  margin-bottom:8px;
+  padding: 10px 0px;
+  color:#31edc1;
+  /* text-transform:uppercase; */
+}
+
+.input-container{
+  margin-bottom:20px;
+}
+
+label{
+  display:block;
+  color: #ffd0a7;
+  font-size: 20px;
+  margin-bottom:8px;
+}
+
+input{
+  width:100%;
+  padding:10px;
+  border-radius:8px;
+  border:2.5px solid rgba(255, 208, 167, 0.4);
+  margin-bottom:6px;
+  font-family: "Inter", sans-serif;
+  background-color:transparent;
+  outline:none;
+  font-size:16px;
+  color: rgba(245, 245, 245, 0.9);
+}
+
+button{
+  background-color:#3ac9a7;
+  color:#ffffffea;
+  font-size: 18px;
+  border:none;
+  font-family: "Inter", sans-serif;
+  letter-spacing: 1.5px;
+  font-weight: 600;
+  border-radius:5px;
+  padding:10px 20px;
+  cursor:pointer;
+  transition: background-color 0.3s;
+}
+
+.btn-1:hover{
+  background-color:#15dcad;
+}
+
+button+button{
+  color:rgba(255, 255, 255, 0.861);
+  background-color:#30bbf3;
+  margin-left:20px;
+}
+
+.data button:nth-of-type(2):hover{
+  background-color:#25ade3;
+}
+
+.result{
+  margin-top:20px;
+  padding:10px;
+  border:2.5px solid rgba(255, 208, 167, 0.4);
+  border-radius:8px;
+}
+
+.result p{
+  margin:10px 0px;
+  color: rgba(255, 255, 255, 0.7);
+}
+
+.result p:first-child{
+  color:#ffb778;
+  font-size: 19px;
+}
+
+.error{
+  color:#30bbf3;
+  font-size: 16px;
+  margin-bottom:12px;
+}
+
