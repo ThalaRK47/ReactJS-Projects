@@ -1,0 +1,57 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@100..900&family=Itim&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+*{
+    padding:0;
+    margin:0;
+    box-sizing:border-box;
+    font-family: "Inter", sans-serif;
+}
+
+@font-face {
+    font-family: clock;
+    src: url(./assets/digital-7.ttf);
+}
+
+/* font-family: "Inter", sans-serif;
+font-family: "Poppins", sans-serif;
+font-family: "Itim", cursive;
+font-family: "Roboto Serif", serif; */
+
+body{
+    width:100vw;
+    height:100vh;
+    display:flex;
+    justify-content:center;
+    align-items:center;
+    background-color:#123263;
+}
+
+.digital-clock{
+    width:480px;
+    background-color:#fff;
+    padding:20px;
+    border-radius:6px;
+    text-align:center;
+    box-shadow: rgba(9, 30, 66, 0.25) 0px 4px 8px -2px, rgba(9, 30, 66, 0.08) 0px 0px 0px 1px;
+}
+
+h1{
+    color:#ea1f8b;
+    font-weight: 600;
+    letter-spacing:2px;
+    text-shadow:1px 1px 3px #ea6eb0;
+    font-size: 26px;
+    margin-bottom:12px;
+}
+
+.time{
+    margin-bottom:4px;
+    font-size:65px;
+    font-family:clock;
+}
+
+.date{
+    color:#00d5ff;
+    font-size:20px;
+    font-family:"Itim",cursive;
+}
